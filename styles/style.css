@@ -33,6 +33,9 @@
   -o-user-drag: none
 }
 
+@media all and (max-width: 320px) {
+}
+
 :root {
   --primary-h-top: 206deg;
   --primary-s-top: 41%;
