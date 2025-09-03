@@ -1,28 +1,154 @@
-<html lang="vi-VN" class="dark" data-title-loader="𝑃ℎ 𝑉𝑎𝑛ℎℎ">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>PhVanhh - Home</title>
-    <meta property="og:title" content="PhVanhh | Profile Home">
-    <link rel="shortcut icon" href="https://i.ibb.co/zhjvWzK9/vanhlogo.png" type="image/x-icon">
-    <meta name="description" content="Hi my name is PhVanhh / A Freelance / Web Developer">
-    <meta name="keywords" content="phvanh,web phvanh,vuong phvanh,phvanhtv,wsteam,wusteam,phvanh home,profile phvanh">
-    <link rel="canonical" href="https://vanhisme.github.io/">
-    <meta content="PhVanh" name="author">
-    <meta property="og:type" content="website">
-    <meta content="#FCFCFD" name="theme-color">
-    <meta property="og:image" content="./res/v5/img/bg3.webp">
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="./assets/css/style.css?v=3.10">
-    <link rel="stylesheet" href="./assets/css/fuiToast.min.css">
-    <link rel="stylesheet" href="./assets/css/fancybox.css">
-    <link rel="stylesheet" href="./assets/css/index.css?v=3.1">
-    <script>
-        window.location.href = "https://vanhisme.carrd.co/";
-    </script>
+  <meta charset="UTF-8">
+  <title>VietAnhDev</title>
+  <link rel="shortcut icon" href="https://kenh14cdn.com/thumb_w/660/203336854389633024/2022/5/23/photo-1-1653312456997323551040.jpg" type="image/png">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    /* MENU */
+    .menu-nav {
+      display: flex;
+      justify-content: center;
+      gap: 16px;
+      flex-wrap: wrap;
+      margin-top: 20px;
+      z-index: 20;
+    }
+    .menu-btn {
+      background: #3a3a3d;
+      color: #fff;
+      border: none;
+      padding: 10px 18px;
+      font-size: 15px;
+      font-weight: 600;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: all 0.25s ease;
+      box-shadow: 0px 4px 12px -3px rgba(0,0,0,0.4);
+    }
+    .menu-btn:hover {
+      background: #555;
+      transform: translateY(-2px);
+    }
+    @media (max-width: 768px) {
+      .menu-btn {
+        font-size: 13px;
+        padding: 8px 14px;
+      }
+    }
+  </style>
 </head>
 <body>
-    <p>Nếu bạn không được chuyển hướng tự động, <a href="https://vanhisme.carrd.co/">bấm vào đây</a>.</p>
+  <div id="particles-js"></div>
+  <div class="min-h-full flex-h-center page-bg" id="background_div">
+    <div class="background-overlay"></div>
+    <div class="mt-36 page-full-wrap relative">
+
+      <!-- Avatar -->
+      <img class="display-image m-auto" src="av.jpg">
+
+      <!-- Tên + giới thiệu -->
+      <h2 class="page-title gradient-text text-center">VietAnhh Software <i class="fa-solid fa-hammer"></i></h2>
+      <div class="page-bioline text-fs-16 page-text-font mt-8 ln-h-22 text-center">
+        Kệ Đời !?   
+      </div>
+
+            <!-- ===== MỤC LỤC ===== -->
+      <div class="menu-nav">
+        <button class="menu-btn" onclick="scrollToSection('ios-section')"><i class="fa-brands fa-apple"></i> iOS</button>
+        <button class="menu-btn" onclick="scrollToSection('shadow-section')"><i class="fa-solid fa-shield-halved"></i> Shadowrocket</button>
+        <button class="menu-btn" onclick="scrollToSection('windows-section')"><i class="fa-brands fa-windows"></i> Windows</button>
+      </div>
+
+      <!-- line -->
+      <div class="section-divider"><span>Liên hệ</span></div>
+
+      <!-- Social links -->
+      <div class="mt-32">
+        <a class="page-item-each" href="https://www.facebook.com/vietvipios" target="_blank">
+          <i class="fab fa-facebook"></i> <span>Facebook</span>
+        </a>
+        <a class="page-item-each" href="https://t.me/vietvipios" target="_blank">
+          <i class="fab fa-telegram"></i> <span>Telegram</span>
+        </a>
+      </div>
+
+
+      <!-- line -->
+      <div class="section-divider" id="ios-section"><span>Tải File IPA Cho Chứng Chỉ/TrollStore</span></div>
+
+      <!-- Download links -->
+      <div class="mt-32">
+        <a class="page-item-each" href="https://archive.org/download/dli-pa-v-1.0.0-vanhisme/DLiPA_v1.0.0_Vanhisme.ipa" target="_blank">
+          <i class="fa-solid fa-download"></i> <span>DLiPA - Hạ Cấp Ứng Dụng</span>
+        </a>
+        <a class="page-item-each" href="https://archive.org/download/eevee-spotify-9.0.68-vanhisme/EeveeSpotify_9.0.68_Vanhisme.ipa" target="_blank">
+          <i class="fa-solid fa-download"></i> <span>EeveeSpotify 9.0.68 ( Spotify Premium )</span>
+        </a>
+        <a class="page-item-each" href="https://archive.org/download/mbbank-1.0-fake-notification_202509/MBBank_1.0_FakeNotification.ipa" target="_blank">
+          <i class="fa-solid fa-download"></i> <span>Fake Notification Biến Động Số Dư MBBank ( TipTip )</span>
+        </a>
+        <a class="page-item-each" href="https://archive.org/download/chrome-125.6422.145-i-os-15-vanhisme/Chrome_125.6422.145_iOS-15_Vanhisme.ipa" target="_blank">
+          <i class="fa-solid fa-download"></i> <span>Google Chrome iOS 15 ( IPA )</span>
+        </a>
+      </div>
+
+      <!-- line -->
+      <div class="section-divider" id="shadow-section"><span>Module Shadowrocket - Ấn Để Copy Module</span></div>
+
+      <!-- Copy buttons -->
+      <button class="page-item copy-btn" onclick="copyText('https://raw.githubusercontent.com/NightmarketServer/Youtube-Premium/refs/heads/main/YouTubePremiumV2.module')">
+        <i class="fa-regular fa-copy"></i> <span>Module YT Premium V2</span>
+      </button>
+      <button class="page-item copy-btn" onclick="copyText('https://raw.githubusercontent.com/NightmarketServer/Spotify/refs/heads/main/SpotifyPre.module')">
+        <i class="fa-regular fa-copy"></i> <span>Module Spotify++</span>
+      </button>
+      <button class="page-item copy-btn" onclick="copyText('https://raw.githubusercontent.com/NightmarketServer/Locket/refs/heads/main/LocketGoldV6.module')">
+        <i class="fa-regular fa-copy"></i> <span>Module Locket Gold V6</span>
+      </button>
+      <button class="page-item copy-btn" onclick="copyText('https://raw.githubusercontent.com/NightmarketServer/Shadowrocket-Module/refs/heads/main/Module/Alight%20Motion.module')">
+        <i class="fa-regular fa-copy"></i> <span>Module Alight Motion Premium</span>
+      </button>
+      <button class="page-item copy-btn" onclick="copyText('https://raw.githubusercontent.com/NightmarketServer/SoundCloudPlus/refs/heads/main/soundcloudplus.module')">
+        <i class="fa-regular fa-copy"></i> <span>Module SoundCloudGo</span>
+      </button>
+      <button class="page-item copy-btn" onclick="copyText('https://raw.githubusercontent.com/NightmarketServer/Shadowrocket-Module/refs/heads/main/Module/Picsart%20Premium.module')">
+        <i class="fa-regular fa-copy"></i> <span>Module Picsart Premium</span>
+      </button>
+      <button class="page-item copy-btn" onclick="copyText('https://raw.githubusercontent.com/NightmarketServer/Bilibili-No-ADS/refs/heads/main/Bilibili%20No%20ADS')">
+        <i class="fa-regular fa-copy"></i> <span>Module Bilibili Adblock</span>
+      </button>
+
+      <!-- line -->
+      <div class="section-divider" id="windows-section"><span>Windows Tools</span></div>
+      <div class="mt-32">
+        <a class="page-item-each" href="#" target="_blank">
+          <i class="fa-solid fa-laptop"></i> <span>Comming Soon...</span>
+        </a>
+      </div>
+
+      <!-- Toast -->
+      <div id="toast">Đã copy!</div>
+
+      <!-- Footer -->
+      <div class="text-center mt-32">
+        <p style="font-size: 14px; color: gray; font-family: Arial;">© VietAnhDev</p>
+      </div>
+    </div>
+  </div>
+
+  <script type="text/javascript" src="noti.js"></script>
+  <script type="text/javascript" src="ani.js"></script>
+  <script>
+    // Scroll tới section
+    function scrollToSection(id) {
+      document.getElementById(id).scrollIntoView({ behavior: "smooth" });
+    }
+  </script>
 </body>
 </html>
