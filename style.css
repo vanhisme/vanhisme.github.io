@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
 body {
   margin: 0;
   padding: 0;
   background-color: #292929;
-  font-family: "Tilt Neon", sans-serif;
+  font-family: "Space Grotesk", sans-serif;
   color: #fff;
 }
 
@@ -185,7 +185,6 @@ body {
   50% { background-position: 400% 0; }
   100% { background-position: 0 0; }
 }
-
 
 
 /* Nút copy */
