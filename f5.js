@@ -8,4 +8,4 @@ const KEY = "f5Count";
       count += 1;
       localStorage.setItem(KEY, count);
     }
-    document.getElementById("hienthi").innerText = "Số Lần F5: " + count;
+    document.getElementById("hienthi").innerText = "F5 Website: " + count;
