@@ -1,206 +1,276 @@
+<!-- PhamVietAnh - vanhisme.github.io -->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>VietAnhDev</title>
-  <link rel="shortcut icon" href="https://kenh14cdn.com/thumb_w/660/203336854389633024/2022/5/23/photo-1-1653312456997323551040.jpg" type="image/png">
-  <link rel="stylesheet" href="style.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Road+Rage&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PhamVietAnh.</title>
+  <script src="https://unpkg.com/lucide@latest"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
-  <style>
-    /* MENU */
-    .menu-nav {
-      display: flex;
-      justify-content: center;
-      gap: 16px;
-      flex-wrap: wrap;
-      margin-top: 20px;
-      z-index: 20;
-    }
-    .menu-btn {
-      background: #3a3a3d;
-      color: #fff;
-      border: none;
-      padding: 10px 18px;
-      font-size: 15px;
-      font-weight: 600;
-      border-radius: 8px;
-      cursor: pointer;
-      transition: all 0.25s ease;
-      box-shadow: 0px 4px 12px -3px rgba(0,0,0,0.4);
-    }
-    .menu-btn:hover {
-      background: #555;
-      transform: translateY(-2px);
-    }
-    @media (max-width: 768px) {
-      .menu-btn {
-        font-size: 13px;
-        padding: 8px 14px;
-      }
-    }
-  </style>
+  <link rel="stylesheet" href="./vanh/style.css">
 </head>
 <body>
-  <div id="particles-js"></div>
-  <div class="min-h-full flex-h-center page-bg" id="background_div">
-    <div class="background-overlay"></div>
-    <div class="mt-36 page-full-wrap relative">
 
-      <!-- Avatar -->
-      <img class="display-image m-auto" src="av.jpg">
+<div class="container">
+  <p>Một Chút Về Tớ :0</p>
+  <h1>Tớ Là Ai?</h1>
+  <p>Tớ Là Tớ, Tớ Chẳng Là Ai Cả 🤞</p>
 
-      <!-- Tên + giới thiệu -->
-      <h2 class="page-title gradient-text text-center">VietAnhh Software <i class="fa-solid fa-hammer"></i></h2>
-      <div class="page-bioline text-fs-16 page-text-font mt-8 ln-h-22 text-center">
-       <big>Kệ Đời !?</big>   </br></br>
-       <i class="fa-solid fa-plug"></i> </i> <span>Ngày Hoạt Động</span>
-        <span id="thoigian"></span> </br>
-        <span id="hienthi">F5 Website: 0</span>
+  <div class="main-section">
+    <div class="left-card">
+      <img src="./img/ava.jpg" alt="Profile">
+      <p style="font-size: 30px;">Pham Viet Anh.</p>
+      <p class="bio">0% Luck, 100% Logic.</p>
+      <div class="VietAnhPham-container">
+        <a href="https://www.facebook.com/vietvipios" target="_blank" class="VietAnhPham">Facebook</a>
+        <a href="https://github.com/vanhisme" target="_blank" class="VietAnhPham">Github</a>
+        <a href="https://t.me/vietvipios" target="_blank" class="VietAnhPham">Telegram</a>
       </div>
 
-            <!-- ===== MỤC LỤC ===== -->
-      <div class="menu-nav">
-        <button class="menu-btn" onclick="scrollToSection('ios-section')"><i class="fa-brands fa-apple"></i> iOS</button>
-        <button class="menu-btn" onclick="scrollToSection('shadow-section')"><i class="fa-solid fa-shield-halved"></i> Shadowrocket</button>
-        <button class="menu-btn" onclick="scrollToSection('windows-section')"><i class="fa-brands fa-windows"></i> Windows</button>
-        <button class="menu-btn" onclick="scrollToSection('tools-section')"><i class="fa-solid fa-screwdriver-wrench"></i> Tools</button>
+    </div>
+
+    <div class="grid">
+      <div class="card">
+        <i data-lucide="smartphone" class="icon"></i>
+        <h3>iOS</h3>
+        <a class="more-VietAnhPham" data-popup="ios">Xem Thêm</a>
       </div>
-
-      <!-- line -->
-      <div class="section-divider"><span>Liên hệ</span></div>
-
-      <!-- Social links -->
-      <div class="mt-32">
-        <a class="page-item-each" href="https://www.facebook.com/vietvipios" target="_blank">
-          <i class="fab fa-facebook"></i> <span>Facebook</span>
-        </a>
-        <a class="page-item-each" href="https://t.me/vietvipios" target="_blank">
-          <i class="fab fa-telegram"></i> <span>Telegram</span>
-        </a>
+      <div class="card">
+        <i data-lucide="rocket" class="icon"></i>
+        <h3>Shadowrocket</h3>
+        <a class="more-VietAnhPham" data-popup="shadowrocket">Xem Thêm</a>
       </div>
-
-
-      <!-- line -->
-      <div class="section-divider" id="ios-section"><span>File IPA - TrollStore</span></div>
-
-      <!-- Download links -->
-      <div class="mt-32">
-        <a class="page-item-each" href="https://archive.org/download/dli-pa-v-1.0.0-vanhisme/DLiPA_v1.0.0_Vanhisme.ipa" target="_blank">
-          <i class="fa-solid fa-download"></i> <span>DLiPA - Hạ Cấp Ứng Dụng</span>
-        </a>
-        <a class="page-item-each" href="https://archive.org/download/eevee-spotify-9.0.68-vanhisme/EeveeSpotify_9.0.68_Vanhisme.ipa" target="_blank">
-          <i class="fa-solid fa-download"></i> <span>EeveeSpotify 9.0.68 ( Spotify Premium )</span>
-        </a>
-        <a class="page-item-each" href="https://archive.org/download/mbbank-1.0-fake-notification_202509/MBBank_1.0_FakeNotification.ipa" target="_blank">
-          <i class="fa-solid fa-download"></i> <span>Fake Notification Biến Động Số Dư MBBank ( TipTip )</span>
-        </a>
-        <a class="page-item-each" href="https://archive.org/download/chrome-125.6422.145-i-os-15-vanhisme/Chrome_125.6422.145_iOS-15_Vanhisme.ipa" target="_blank">
-          <i class="fa-solid fa-download"></i> <span>Google Chrome iOS 15 ( IPA )</span>
-        </a>
-        <a class="page-item-each" href="https://www.mediafire.com/file/bzduz492v365szb/Shadowrocket_2.2.67_TrollStore_Vanhisme.tipa/file" target="_blank">
-          <i class="fa-solid fa-download"></i> <span>Shadowrocket TIPA v2.2.67 - Cài Qua TrollStore</span>
-        </a>
-        <a class="page-item-each" href="https://www.mediafire.com/file/usv3q80obfgxyxt/TrollStore_2.1_BVNRepo_VietHoa.tar/file" target="_blank">
-          <i class="fa-solid fa-download"></i> <span>TrollStore TAR v2.1 - TrollStore Việt Hoá ( BVN Repo )</span>
-        </a>
+      <div class="card">
+        <i data-lucide="app-window" class="icon"></i>
+        <h3>Windows</h3>
+        <a class="more-VietAnhPham" data-popup="windows">Xem Thêm</a>
       </div>
-
-      <!-- line -->
-      <div class="section-divider" id="shadow-section"><span>Module Shadowrocket - Ấn Để Copy Module</span></div>
-
-      <!-- Copy buttons -->
-      <button class="page-item copy-btn" onclick="copyText('https://raw.githubusercontent.com/NightmarketServer/Youtube-Premium/refs/heads/main/YouTubePremiumV2.module')">
-        <i class="fa-regular fa-copy"></i> <span>Module YT Premium V2</span>
-      </button>
-      <button class="page-item copy-btn" onclick="copyText('https://raw.githubusercontent.com/NightmarketServer/Spotify/refs/heads/main/SpotifyPre.module')">
-        <i class="fa-regular fa-copy"></i> <span>Module Spotify++</span>
-      </button>
-      <button class="page-item copy-btn" onclick="copyText('https://raw.githubusercontent.com/NightmarketServer/Locket/refs/heads/main/LocketGoldV6.module')">
-        <i class="fa-regular fa-copy"></i> <span>Module Locket Gold V6</span>
-      </button>
-      <button class="page-item copy-btn" onclick="copyText('https://raw.githubusercontent.com/NightmarketServer/Shadowrocket-Module/refs/heads/main/Module/Alight%20Motion.module')">
-        <i class="fa-regular fa-copy"></i> <span>Module Alight Motion Premium</span>
-      </button>
-      <button class="page-item copy-btn" onclick="copyText('https://raw.githubusercontent.com/NightmarketServer/SoundCloudPlus/refs/heads/main/soundcloudplus.module')">
-        <i class="fa-regular fa-copy"></i> <span>Module SoundCloudGo</span>
-      </button>
-      <button class="page-item copy-btn" onclick="copyText('https://raw.githubusercontent.com/NightmarketServer/Shadowrocket-Module/refs/heads/main/Module/Picsart%20Premium.module')">
-        <i class="fa-regular fa-copy"></i> <span>Module Picsart Premium</span>
-      </button>
-      <button class="page-item copy-btn" onclick="copyText('https://raw.githubusercontent.com/NightmarketServer/Bilibili-No-ADS/refs/heads/main/Bilibili%20No%20ADS')">
-        <i class="fa-regular fa-copy"></i> <span>Module Bilibili Adblock</span>
-      </button>
-
-      <!-- line -->
-      <div class="section-divider" id="windows-section"><span>Windows Tools</span></div>
-      <!-- Windows -->
-      <div class="mt-32">
-
-        <a class="page-item-each" href="https://www.mediafire.com/file/2l2xmw37d5d5z3o/Win10_21H2_SuperLite_Vanhdev.ISO/file" target="_blank">
-          <i class="fa-solid fa-laptop"></i> <span>Win 10 - 21H2 - SuperLite</span>
-        </a>
-
-
-        <a class="page-item-each" href="https://www.mediafire.com/file/08t8ob6p98yztz2/DefenderControl_Vanhisme.rar/file" target="_blank">
-          <i class="fa-solid fa-laptop"></i> <span>Tắt Windows Defender - MK 1101</span>
-        </a>
-
-        <a class="page-item-each" href="https://github.com/vanhisme/vanhisme.github.io/releases/download/VietAnhhh/I0bit_Unlnstaller_14.1.0.2_Vanhisme.rar" target="_blank">
-          <i class="fa-solid fa-laptop"></i> <span>IObit Uninstaller Pro 14.1.0.2 Full - MK 1101 ( Tắt Windows Defender Trước Khi Cài )</span>
-        </a>
-
-        <a class="page-item-each" href="#" target="_blank">
-          <i class="fa-solid fa-laptop"></i> <span>Comming Soon...</span>
-        </a>
-      </div>
-
-      <!-- line -->
-      <div class="section-divider" id="tools-section"><span>Tools</span></div>
-      <!-- Tools -->
-      <div class="mt-32">
-        <a class="page-item-each" href="./tools/gemini/index.html" target="_blank">
-          <i class="fa-solid fa-wrench"></i> <span>Gemini AI</span>
-        </a>
-        <a class="page-item-each" href="#" target="_blank">
-          <i class="fa-solid fa-wrench"></i> <span>Comming Soon...</span>
-        </a>
-        <a class="page-item-each" href="#" target="_blank">
-          <i class="fa-solid fa-wrench"></i> <span>Comming Soon...</span>
-        </a>
-        <a class="page-item-each" href="#" target="_blank">
-          <i class="fa-solid fa-wrench"></i> <span>Comming Soon...</span>
-        </a>
-      </div>
-
-      <!-- Toast -->
-      <div id="toast">Đã copy!</div>
-
-      <!-- Footer -->
-      <div class="text-center mt-32">
-        <p style="font-size: 14px; color: gray; font-family: Arial;">© VietAnhDev</p>
+      <div class="card">
+        <i data-lucide="wrench" class="icon"></i>
+        <h3>Tools</h3>
+        <a class="more-VietAnhPham" data-popup="tools">Xem Thêm</a>
       </div>
     </div>
   </div>
+</div>
 
-  <script type="text/javascript" src="noti.js"></script>
-  <script type="text/javascript" src="ani.js"></script>
-  <script type="text/javascript" src="time.js"></script>
-  <script type="text/javascript" src="f5.js"></script>
-  <script src="disable-devtools.js"></script>
-  <script>
-    // Scroll tới section
-    function scrollToSection(id) {
-      document.getElementById(id).scrollIntoView({ behavior: "smooth" });
+<!-- Popup iOS -->
+<div id="popup-ios" class="popup">
+  <div class="popup-content">
+    <span class="close-VietAnhPham">&times;</span>
+    <h2>iOS</h2>
+<!-- TrollStore -->
+    <div class="section">
+      <h3>— TrollStore —</h3>
+      <a href="https://ios.cfw.guide/installing-trollstore/">📦 | TrollStore</a>
+      <a href="https://github.com/straight-tamago/misaka">📦 | Misaka</a>
+      <a href="https://cowabun.ga/">📦 | Cowabunga</a>
+    </div>
+
+<!-- IPA ( TrollsStore ) -->
+    <div class="section">
+      <h3>— iPA ( TrollStore ) —</h3>
+      <a href="https://github.com/Lessica/TrollFools/releases">📦 | TrollFools</a>
+      <a href="https://site2s.com/XjmGLAS">📦 | FilzaEscaped</a>
+    </div>
+
+    <!-- IPA ( TrollsStore ) -->
+    <div class="section">
+      <h3>— iPA —</h3>
+      <a href="#">📦 | Updating</a>
+      <a href="#">📦 | Updating</a>
+      <a href="#">📦 | Updating</a>
+    </div>
+
+    <!-- JB -->
+    <div class="section">
+      <h3>— Jailbreak —</h3>
+      <a href="https://github.com/opa334/Dopamine/releases">📦 | Dopamine RootLess</a>
+      <a href="https://github.com/roothide/Dopamine2-roothide/releases">📦| Dopamine </a>
+    </div>
+    
+  </div>
+</div>
+
+<!-- Shadowrocket -->
+<div id="popup-shadowrocket" class="popup">
+  <div class="popup-content">
+    <span class="close-VietAnhPham">&times;</span>
+    <h2>Shadowrocket</h2>
+    <h6>Ấn Để Sao Chép!</h6> <br>
+
+    <!-- Module -->
+    <div class="section">
+      <h3>— Module —</h3>
+      <a href="#" class="copy-text" data-copy="https://raw.githubusercontent.com/NightmarketServer/Youtube-Premium/refs/heads/main/YouTubePremiumV2.module">🚀 | Module YT Premium V2</a>
+      <a href="#" class="copy-text" data-copy="https://raw.githubusercontent.com/NightmarketServer/Spotify/refs/heads/main/SpotifyPre.module">🚀 | Module Spotify++</a>
+      <a href="#" class="copy-text" data-copy="https://raw.githubusercontent.com/NightmarketServer/Locket/refs/heads/main/LocketGoldV6.module">🚀 | Module Locket Gold V6</a>
+      <a href="#" class="copy-text" data-copy="https://raw.githubusercontent.com/NightmarketServer/Shadowrocket-Module/refs/heads/main/Module/Alight%20Motion.module">🚀 Module Alight Motion Premium</a>
+      <a href="#" class="copy-text" data-copy="https://raw.githubusercontent.com/NightmarketServer/SoundCloudPlus/refs/heads/main/soundcloudplus.module">🚀 | Module SoundCloudGo</a>
+      <a href="#" class="copy-text" data-copy="https://raw.githubusercontent.com/NightmarketServer/Shadowrocket-Module/refs/heads/main/Module/Picsart%20Premium.module">🚀 | Module Picsart Premium</a>
+      <a href="#" class="copy-text" data-copy="https://raw.githubusercontent.com/NightmarketServer/Bilibili-No-ADS/refs/heads/main/Bilibili%20No%20ADS">🚀 | Module Bilibili Adblock</a>    
+    </div>
+  </div>
+</div>
+
+<!-- Popup Windows -->
+<div id="popup-windows" class="popup">
+  <div class="popup-content">
+    <span class="close-VietAnhPham">&times;</span>
+    <h2>Windows</h2>
+
+    <!-- ISO -->
+    <div class="section">
+      <h3>— ISO —</h3>
+      <a href="https://site2s.com/BhGpM6Z8">💻 | Win 10 LTSC 21H2 by Ghost Spectre</a>
+    </div>
+
+<!-- Application -->
+    <div class="section">
+      <h3>— Application —</h3>
+      <a href="https://site2s.com/7gTYdB">💻 | IObit Uninstaller Pro - MK 1101</a>
+    </div>
+  </div>
+</div>
+
+<!-- Application -->
+    
+<!-- Popup Tools -->
+<div id="popup-tools" class="popup">
+  <div class="popup-content">
+    <span class="close-VietAnhPham">&times;</span>
+    <h2>Tools</h2>
+    <div class="section">
+      <h3>— Files —</h3>
+      <a href="https://site2s.com/s70fcp2C0m">🧰 | Chuẩn Đoán Panic ( iOS )</a>
+      <a href="#">🧰 | File 2</a>
+    </div>
+  </div>
+</div>
+
+
+<script src="./vanh/main.js"></script>
+<script src="./vanh/copy.js"></script>
+
+<!-- ========== Menu Chuột Phải Tùy Chỉnh ========== -->
+<div id="custom-menu" class="context-menu">
+  <ul>
+    <li><i data-lucide="home"></i> Trang chủ</li>
+    <li><i data-lucide="refresh-ccw"></i> Tải lại trang</li>
+    <li><i data-lucide="arrow-left"></i> Trang trước</li>
+    <li><i data-lucide="arrow-right"></i> Trang kế</li>
+    <li><i data-lucide="search"></i> Tìm kiếm</li>
+    <li><i data-lucide="file-text"></i> Điều khoản</li>
+    <li><i data-lucide="info"></i> Về chúng tôi</li>
+  </ul>
+</div>
+
+<!-- ========== CSS ========== -->
+<style>
+.context-menu {
+  position: fixed;
+  display: none;
+  background: rgba(20, 20, 20, 0.95);
+  backdrop-filter: blur(6px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 12px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.4);
+  z-index: 10000;
+  overflow: hidden;
+  width: 220px;
+  animation: fadeIn 0.2s ease;
+}
+
+.context-menu ul {
+  list-style: none;
+  padding: 6px 0;
+  margin: 0;
+}
+
+.context-menu li {
+  padding: 10px 16px;
+  color: #e0e0e0;
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  transition: 0.25s;
+}
+
+.context-menu li:hover {
+  background: #2e8ef7;
+  color: white;
+  transform: translateX(2px);
+}
+
+.context-menu i {
+  width: 18px;
+  height: 18px;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.95); }
+  to { opacity: 1; transform: scale(1); }
+}
+</style>
+
+<!-- ========== JS ========== -->
+<script>
+  lucide.createIcons();
+
+  const menu = document.getElementById("custom-menu");
+
+
+  document.addEventListener("contextmenu", function(e) {
+    e.preventDefault();
+    const x = e.pageX;
+    const y = e.pageY;
+    menu.style.top = `${y}px`;
+    menu.style.left = `${x}px`;
+    menu.style.display = "block";
+  });
+
+ document.addEventListener("click", () => menu.style.display = "none");
+
+  document.querySelectorAll("#custom-menu li").forEach(item => {
+    item.addEventListener("click", () => {
+      const text = item.textContent.trim();
+      if (text === "Tải lại trang") location.reload();
+      else if (text === "Trang trước") history.back();
+      else if (text === "Trang kế") history.forward();
+      else if (text === "Trang chủ") location.href = "/";
+      else if (text === "Tìm kiếm") alert("🔍 Tính năng tìm kiếm đang được phát triển!");
+      else if (text === "Điều khoản") alert("📜  Đang được phát triển!");
+      else if (text === "Về chúng tôi") alert("👋 Nếu bạn có bất kỳ khiếu nại, đề xuất hoặc câu hỏi nào về việc thực hiện chính sách này hoặc các vấn đề liên quan đến bảo vệ quyền riêng tư của chúng tôi, bạn có thể liên hệ với chúng tôi qua các phương pháp sau và chúng tôi sẽ trả lời bạn trong vòng 1 ngày làm việc sau khi thấy khiếu nại của bạn! \n  ~ Telegram: @vietvipios");
+      menu.style.display = "none";
+    });
+  });
+
+ document.onkeydown = function(e) {
+    if (
+      e.keyCode === 123 ||
+      (e.ctrlKey && e.shiftKey && e.keyCode === 73) ||
+      (e.ctrlKey && e.keyCode === 85)
+    ) {
+      e.preventDefault();
+      alert("⚠️ Hành động này đã bị vô hiệu hoá!");
+      return false;
     }
-  </script>
+  };
+
+  setInterval(() => {
+    const t0 = performance.now();
+    debugger;
+    const t1 = performance.now();
+    if (t1 - t0 > 100) {
+      document.body.innerHTML = "<h1 style='text-align:center;margin-top:20%;color:white;'>🚫 DevTools đã bị chặn!<h11>";
+    }
+  }, 1000);
+</script>
+
 </body>
 </html>
