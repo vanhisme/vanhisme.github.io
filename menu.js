@@ -38,16 +38,3 @@ function openMenu(x, y) {
 document.addEventListener("click", () => {
     menu.classList.remove("show");
 });
-
-function copySelectedText() {
-    const selected = window.getSelection().toString();
-
-    if (!selected.trim()) {
-        alert("Không có chữ nào để copy!");
-        return;
-    }
-
-    navigator.clipboard.writeText(selected)
-        .then(() => alert("Đã copy: " + selected))
-        .catch(() => alert("Copy thất bại :( "));
-}
