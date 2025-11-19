@@ -377,3 +377,70 @@ body {
         font-size:18px;
       }
     }
+
+/* POPUP GIỮA MÀN HÌNH */
+.popup-center {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  backdrop-filter: blur(4px);
+  background: rgba(0,0,0,0.45);
+  z-index: 99999;
+}
+
+.popup-center.show {
+  display: flex;
+  animation: fadePopup .25s ease-out;
+}
+
+@keyframes fadePopup {
+  from { opacity: 0; transform: scale(0.9); }
+  to   { opacity: 1; transform: scale(1); }
+}
+
+.popup-box {
+  background: rgba(15, 15, 20, 0.9);
+  padding: 25px 30px;
+  border-radius: 16px;
+  width: 320px;
+  text-align: center;
+  color: #fff;
+  border: 1px solid rgba(0, 170, 255, 0.4);
+  box-shadow:
+    0 0 10px rgba(0, 170, 255, 0.2),
+    0 0 25px rgba(0, 170, 255, 0.1);
+}
+
+.popup-box h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.popup-box p {
+  font-size: 15px;
+  opacity: 0.8;
+  margin-bottom: 18px;
+}
+
+.popup-btn {
+  background: var(--accent);
+  border: none;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.25s ease;
+  width: 100%;
+}
+
+.popup-btn:hover {
+  transform: scale(1.05);
+  background: #33bbff;
+}
