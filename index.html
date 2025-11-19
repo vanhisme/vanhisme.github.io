@@ -29,6 +29,9 @@
       <button onclick="showPage('windows', this)">
         <i class="fab fa-windows"></i><span>Windows</span>
       </button>
+      <button onclick="showPage('iso', this)">
+        <i class="fa-solid fa-hard-drive"></i><span>ISO</span>
+      </button>
       <button onclick="showPage('websites', this)">
         <i class="fa-solid fa-window-maximize"></i><span>Websites</span>
       </button>
@@ -44,7 +47,13 @@
     <div id="info" class="page active">
       <div class="card" style="text-align:center">
         <img src="./4.png" class="avatar" alt="avatar" />
-        <h2><big>Phạm Việt Anh</big></h2><br>
+          <h2><big>Phạm Việt Anh</big></h2>
+        <div class="discord-status" style="margin: 12px 0; text-align:center; font-size: 16px; opacity: 0.9;">
+          <span id="discord-emoji" style="font-size:20px; margin-right:6px;"></span>
+          <span id="discord-text">Đang tải trạng thái...</span>
+          <span id="discord-dot" style="display:inline-block; width:9px; height:9px; border-radius:50%; background:#666; margin-left:8px; vertical-align:middle;"></span>
+        </div>
+
         <p>0% Lucky, 100% Logic.</p><br>
 
         <div class="social-buttons">
@@ -164,17 +173,10 @@
           <p>Tien ich cai win dao v2.1.1.4.zip ( Free ) - <a href="https://www.facebook.com/be.vova" style="color: white;" target="_blank">Minh Hải Bùi  (Hải dớ)</a></p> <br>
           <a href="https://drive.google.com/file/d/1okqUWWVYjFXhWFBMvaMYZTxbMI0WaKH3/view?usp=sharing" target="_blank" class="download-btn"><i class="fas fa-download"></i> Tải xuống</a>
         </div>
-
-<!-- Win 10 LTSC 21H2 by Ghost SpectreI -->
-        <div class="tool">
-          <h2>Win 10 LTSC 21H2 by Ghost Spectre</h2><br>
-          <p>Windows 10 LTSC 21H2 Super Lite/Compact by Ghost Spectre là một điểm đến không thể không nhắc đến. Nó là sự kết hợp tinh tế giữa hiệu suất cao và tối ưu hóa không ngừng, mang đến cho người dùng một trải nghiệm máy tính mượt mà và không gián đoạn.</p> <br>
-          <a href="https://drive.google.com/file/d/1mAb2R6676zLY2INoRdm0BMqpd682lpO6/view?usp=sharing" target="_blank" class="download-btn"><i class="fas fa-download"></i> Tải xuống</a>
-        </div>
   
 <!-- DLP GUI -->
         <div class="tool">
-          <h2>Yt-DLP GUI</h2><br>
+          <h2>Yt - DLP GUI</h2><br>
           <p>Tải video từ YouTube nhanh gọn.</p> <br>
           <a href="https://github.com/kannagi0303/yt-dlp-gui/releases/tag/2023.03.28" target="_blank" class="download-btn"><i class="fas fa-download"></i> Tải xuống</a>
         </div>
@@ -190,6 +192,23 @@
 
       </div>
     </div>
+
+
+    <!-- ISO -->
+    <div id="iso" class="page">
+      <div class="section">
+
+<!-- Win 10 LTSC 21H2 by Ghost SpectreI -->
+        <div class="tool">
+          <h2>Win 10 LTSC 21H2 by Ghost Spectre</h2><br>
+          <p>Windows 10 LTSC 21H2 Super Lite/Compact by Ghost Spectre là một điểm đến không thể không nhắc đến. Nó là sự kết hợp tinh tế giữa hiệu suất cao và tối ưu hóa không ngừng, mang đến cho người dùng một trải nghiệm máy tính mượt mà và không gián đoạn.</p> <br>
+          <a href="https://drive.google.com/file/d/1mAb2R6676zLY2INoRdm0BMqpd682lpO6/view?usp=sharing" target="_blank" class="download-btn"><i class="fas fa-download"></i> Tải xuống</a>
+        </div>
+
+      </div>
+    </div>
+
+
 
 
     <!-- Websites -->
@@ -252,6 +271,23 @@
   </ul>
 </div>
 
+<!-- Popup -->
+
+<div id="reloadPopup" class="popup-center">
+  <div class="popup-box">
+    <h1>Thông báo :v</h1> <br>
+    <p style="font-size: 20px;">Web vẫn đang trong quá trình update! <br>
+      Cần feedback ib: <a href="https://t.me/vietvipios" style="color: white;" target="_blank">Telegram</a>
+    </p> <br>
+    <button onclick="closeReloadPopup()" class="popup-btn">Đóng</button>
+  </div>
+</div>
+
+
+
+
+<script src="./dis.js"></script>
 <script src="./menu.js"></script>
+<script src="./popup.js"></script>
 </body>
 </html>
